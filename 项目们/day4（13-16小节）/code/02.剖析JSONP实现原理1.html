@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<!-- 实现原理：由于使用script标签调用远程js文件没有不受跨域的影响，所以可以通过创建一个script标签，通过src属性来访问远程文件。
+其实这并不属于AJAX，但是可以实现类似AJAX的功能。 -->
+<body>
+  <script>
+    function success(data) {
+      console.log('拿到了Data数据：')
+      console.log(data)
+    }
+  </script>
+
+  <script>
+    success({ name: 'zs', age: 20 })
+  </script>
+</body>
+
+</html>

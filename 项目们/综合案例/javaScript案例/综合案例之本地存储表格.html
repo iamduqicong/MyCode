@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function getLocalData(){
+            let data=localStorage.getItem('data')
+            if(data){
+                return JSON.parse(data)
+            }
+            else{
+                let arr=[
+                    {stuId:01,uname:'张三'},
+                    {stuId:02,uname:'李四'},
+                    {stuId:03,uname:'王五'}
+                ]
+
+                localStorage.setItem('data',JSON.stringify(arr))
+            }
+        }
+
+
+
+        getLocalData()
+
+
+
+        function render(){
+            let arr=getLocalData
+        }
+
+
+
+        render()
+
+
+        let arr=getLocalData()
+
+        // push完了再上传一次，存完再最后渲染。
+        localStorage.setItem('data',JSON.stringify(arr))
+// 删除也是一样
+        arr.splice(e.target.id,1)
+
+        localStorage.setItem('data',JSON.stringify(arr))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{height: 100%;}
+body{
+    height: 100%;
+    background: url(../img/f1_1.jpg) no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+
+.cloud img:nth-child(1){
+    position: absolute;
+    left: 536px;
+    top: 15px;
+    animation: cloud 2s infinite alternate;
+}
+.cloud img:nth-child(2){
+    position: absolute;
+    left: 300px;
+    top: 120px;
+    animation: cloud 2s 0.5s infinite alternate;
+}
+.cloud img:nth-child(3){
+    position: absolute;
+    left: 1050px;
+    top: 42px;
+    animation: cloud 2s 1s infinite alternate;
+}
+
+.header img{
+    width: 450px;
+    position: absolute;
+    left: 410px;
+    top: 210px;
+
+    animation: zoom 1s infinite alternate;
+}
+
+.lu img{
+    width: 150px;
+    position: absolute;
+    left: 737px;
+    top: 105px;
+}
+
+.baloon img{
+    width: 150px;
+    position: absolute;
+    left: 280px;
+    top: 200px;
+    animation: up 1s infinite alternate;
+    
+}
+
+
+
+.tag img:nth-child(1){
+    position: absolute;
+    left: 259px;
+    bottom: 0;
+    animation: up 1s infinite alternate;
+
+}
+.tag img:nth-child(2){
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+    animation: up 1s 0.5s infinite alternate;
+
+}
+.tag img:nth-child(3){
+    position: absolute;
+    left: 700px;
+    bottom: 0;
+    animation: up 1s 1s infinite alternate;
+
+}
+.tag img:nth-child(4){
+    position: absolute;
+    left: 900px;
+    bottom: 0;
+    animation: up 1s  1.5s infinite alternate;
+}
+
+@keyframes cloud {
+    to{
+        transform: translateX(-20px);
+    }
+    
+}
+
+
+@keyframes zoom {
+
+    to{
+        transform: scale(1.1);
+    }
+    
+}
+
+@keyframes up {
+    to{
+        transform:translateY(-20px);
+    }
+}
+

@@ -1,0 +1,65 @@
+{
+  "id": "3509400",
+  "name": "2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5016689",
+      "name": "包子",
+      "font_class": "baozi",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "5016693",
+      "name": "苹果",
+      "font_class": "pingguo",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "5016733",
+      "name": "橙子",
+      "font_class": "chengzi",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "5018759",
+      "name": "青椒",
+      "font_class": "qingjiao",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "5019043",
+      "name": "西红柿",
+      "font_class": "xihongshi",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "5019219",
+      "name": "芒果",
+      "font_class": "mangguo",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "5020846",
+      "name": "包菜",
+      "font_class": "baocai",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5021905",
+      "name": "牛奶",
+      "font_class": "niunai",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}

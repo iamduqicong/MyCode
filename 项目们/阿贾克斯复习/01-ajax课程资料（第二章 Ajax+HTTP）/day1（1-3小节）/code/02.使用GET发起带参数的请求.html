@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./lib/jquery.js"></script>
+</head>
+
+<body>
+  <button id="btnGETINFO">发起单参数的GET请求</button>
+
+  <!-- 很多时候获取需要参数来指定是哪一项,传多个参数是值都要带双引号 -->
+  <script>
+    $(function(){
+      $('#btnGETINFO').on('click',function(){
+        $.get('http://www.liulongbin.top:3006/api/getbooks',
+        {
+          bookname: "三国演义",
+          id: "1",
+      },function(res){
+          console.log(res)
+        })
+      })
+    })
+  </script>
+</body>
+
+</html>

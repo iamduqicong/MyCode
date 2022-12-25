@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script src="../../../jquery-3.6.1.js"></script>
+
+    <script>
+        ;(function(){
+    $('.words span').text(0)
+    $('.publish_btn').addClass('disabled')
+    $('.input-box textarea').on('focus',function(){
+        $(this)
+        .parent()
+        .addClass('actived')
+    })
+    $('.input-box textarea').on('blur',function(){
+        $(this)
+        .parent()
+        .removeClass('actived')
+    })
+
+    $('.input-box textarea').on('input',function(){
+        $('.words span').text($(this).val().length)
+
+        $('.words span').text(length)
+        if(length===0){
+            $('.publish_btn').addClass('disabled')
+            else{
+                $('.publish_btn').removeClass('disabled')
+            }
+        }
+    })
+        })()
+    </script>
+</body>
+</html>

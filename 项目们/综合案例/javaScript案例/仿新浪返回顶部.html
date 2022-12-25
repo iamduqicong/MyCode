@@ -1,0 +1,15 @@
+<script>
+    let backtop=document.querySelector('.backtop')
+    window.addEventListener('scroll',function(){
+        let num=document.documentElement.scrollTop
+        if(num>=500){
+   cancelAnimationFrame
+        }else{
+            backtop.style.display='none'
+        }
+    })
+
+    backtop.children[1].addEventListener('click',function(){
+        document.documentElement.scrollTop=0
+    })
+</script>

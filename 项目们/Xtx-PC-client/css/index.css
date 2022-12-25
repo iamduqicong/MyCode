@@ -1,0 +1,279 @@
+.banner{
+    position: relative;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+
+}
+
+.banner .aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.banner .aside li{
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .aside a
+{
+    position: relative;
+ padding-left: 36px;
+ padding-right: 19px;
+display: block;
+height: 50px;
+
+color: #fff;
+}
+.banner .aside a span{
+    font-size: 14px;
+    margin-left: 15px;
+    
+}
+
+.banner .aside a:hover{
+    background-color: #27ba9b;
+}
+
+.banner .aside li a::after{
+
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+  
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+
+.prev,
+.next{
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 50%;
+    background-image: url(../images/sprites.png);
+}
+
+
+.prev{
+    left: 260px;
+    background-position: 14px -60px;
+
+}
+
+.next{
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+.banner ol{
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+    height: 10px;
+    
+}
+
+
+.banner ol li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 24px;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner ol li.current{
+
+    background-color: white;
+}
+
+
+.goods .hd{
+    height: 114px;
+    
+    line-height: 114px;
+}
+
+.goods .hd h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 114px;
+}
+
+.goods .hd a,.shengxian .hd .more{
+    float: right;
+    color: #999;
+}
+
+.goods .hd h2 span{
+    font-size: 16px;
+    color: #999;
+    margin-left: 34px;
+}
+
+.goods .hd a::after
+,.shengxian .hd .more::after{
+    content: '';
+    margin-left: 13px;
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+
+}
+
+.goods .bd li{
+    float: left;
+    position: relative;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+
+.goods .bd li:last-child{
+    margin-right: 0;
+}
+
+.goods .bd li img{
+    width: 304px;
+}
+
+.goods .bd li h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.goods .bd li div{
+    color: #9a2e1f;
+    font-size: 23px;
+}
+
+.goods .bd li div span{
+    font-size: 17px;
+}
+
+.goods .bd li b{
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.shengxian .hd{
+height: 96px;
+
+line-height: 96px;
+}
+
+.shengxian .hd h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+
+}
+
+.shengxian .hd .more{
+    float: right;
+}
+
+.shengxian .hd ul{
+    float: right;
+    margin-right: 65px;
+}
+
+.shengxian .hd ul li{
+    float: left;
+    
+}
+
+.shengxian .hd ul li a{
+    padding: 2px 7px;
+    margin-left: 6px;
+}
+
+.shengxian .hd ul li a:hover{
+    background-color: #27ba9b;
+    color: #fff;
+}
+
+
+
+.shengxian .bd .left{
+    float: left;
+    width: 240px;
+    height: 610px;
+    
+}
+
+.shengxian .bd .right{
+    float: left;
+    width: 1000px;
+    height: 610px;
+    
+}
+
+.shengxian .bd .right ul{
+    width: 1000px;
+    height: 610px;
+    text-align: center;
+  
+}
+
+.shengxian .bd .right ul li{
+    float: left;
+    margin-left: 8px;
+width: 242px;
+margin-top: 10px;
+
+}
+
+.shengxian .bd .right ul li a img{
+    padding-top: 15px;
+   height: 200px;
+   margin-bottom: 5px;
+   border-radius: 10px;
+  
+}
+.shengxian .bd .right ul li a{
+    font-size: 13px;
+    font-weight: 400;
+}
+.shengxian .bd .right ul li div{
+    color: #9a2e1f;
+}
+
+.shengxian .bd .right ul li:hover{
+    
+    transition: all 1s;
+   
+background-color: #279a3b;
+}

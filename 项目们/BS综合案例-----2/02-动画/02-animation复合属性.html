@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation复合属性</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /* animation: change 1s linear; */
+
+            /* 分步动画 */
+
+            /* 3: 重复3次播放 */
+            /* animation: change 1s steps(3) 1s 3; */
+
+            /* 无限循环 */
+            /* animation: change 1s infinite alternate; alternate是反向执行 */
+
+            /* 默认值, 动画停留在最初的状态 */
+            /* animation: change 1s backwards; */
+
+            /* 动画停留在结束状态 */
+            /* 时间之后的那个属性指的是播放完毕后的状态,backwards指定动画停留在最初的状态,forwards是说停留在结束时的状态 */
+           animation: change 1s steps(3) 1s 3;
+        }
+
+        @keyframes change {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 600px;
+            }
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

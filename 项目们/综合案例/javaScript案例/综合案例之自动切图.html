@@ -1,0 +1,63 @@
+<script>
+    let lis=document.querySelectorAll('.indicator li')
+    let piclis=document.querySelectorAll('.slides ul li')
+    let text=document.querySelector('.extra h3')
+    let next=document.querySelector('.next')
+    let main=document.querySelector('.main')
+
+for(let i=0;i<lis.length;i++){
+    lis[i].addEventListener('mouseenter',function(){
+        document.querySelector('.indicator .active').classList.remove('active')
+        this.classList.add('active')
+
+
+        document.querySelector('.slides ul .active').classList.remove('active')
+        piclis[i].classList.add('active')
+        text.innerHTML=`第${i+1}张图信息描述`
+
+        index=i
+    })
+}
+
+next.addEventListener('click',function(){
+    index++
+    index=index%lis.length
+    common()
+})
+let index=0
+prev.addEventListener('click',function(){
+     index--
+     index=(lis.length+index)%lis.length
+    common()
+   
+
+
+})
+
+function common(){
+    document.querySelector('.indicator .active').classList.remove('active')
+    lis[index].classList.add('active')
+    
+    document.querySelector('.slides ul .active').classList.remove('active')
+    piclis[i].classList.add('active')
+    text.innerHTML=`第${index+1}张图的描述信息`
+}
+
+
+let timer=setInterval(function(){
+    next.click()
+},1000)
+
+main.addEventListener('mouseenter',function(){
+clearInterval(timer)
+})
+
+main.addEventListener('mouseleave',function(){
+    timer=setInterval(function(){
+    next.click()
+},1000)
+})
+</script>
+
+
+

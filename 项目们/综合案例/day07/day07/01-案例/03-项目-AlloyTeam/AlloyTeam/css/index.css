@@ -1,0 +1,45 @@
+.carousel img {
+  height: 100%!important;
+}
+@media (max-width: 992px) {
+  .carousel .item {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .item {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel .item {
+    height: 500px;
+  }
+}
+.carousel .carousel-indicators li {
+  width: 25px;
+  height: 3px;
+  background-color: grey;
+  border: 1px solid grey;
+}
+.carousel .carousel-indicators .active {
+  transition: all 1s;
+  background-color: #fff;
+  transform: translateY(-5px);
+  border: 1px solid #fff;
+}
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+}
+.project {
+  text-align: center;
+}
+.project .container {
+  background-color: pink;
+}
+.project .container a {
+  display: block;
+  background-color: #fff;
+  height: 200px;
+}

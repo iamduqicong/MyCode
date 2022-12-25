@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>计数器</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <!-- html结构 -->
+    <div id="app">
+      <!-- 计数器功能区域 -->
+      <div class="input-num">
+        <!-- 减号 -->
+        <button>
+          -
+        </button>
+        <!-- 内容 -->
+        <span>0</span>
+        <!-- 加号 -->
+        <button>
+          +
+        </button>
+      </div>
+      <img src="http://www.itheima.com/images/logo.png" alt="" />
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="./jquery/jquery-3.5.1.js"></script>
+    <!-- 编码 -->
+    <script>
+      ;(function(){
+     $('.label').click(function(){
+      $(this).addClass('active')
+      $(this)
+      .siblings()
+      .removeClass('active')
+
+      let id = $(this).attr('data-label')
+      console.log('id:',id)
+      $(id).css('display','block')
+      $(id)
+      .siblings()
+      .css('display','none')
+     })
+
+     $('.icon').click(function(){
+      let isActive = $(this).hasClass('active')
+      console.log('isActive:',isActive)
+      if(isActive===false){
+        $(this).addClass('active')
+      $(this)
+      .siblings()
+      .removeClass('active')
+
+      let id = $(this).attr('data-label')
+      console.log('id:',id)
+      $(id).css('display','block')
+      $(id)
+      .siblings()
+      .css('display','none')
+      }
+      else{
+        $('.label')
+        .last()
+        .trigger('click')
+      }
+     })
+      })()
+
+      git remote add origin https://github.com/iamduqicong/rookie-s-attempt.git
+git branch -M main
+git push -u origin main
+    </script>
+  </body>
+</html>

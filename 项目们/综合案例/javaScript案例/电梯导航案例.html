@@ -1,0 +1,12 @@
+<script>
+    let items=document.querySelectorAll('.item')
+
+    for(let i=0;i<items.length;i++){
+        items[i].addEventListener('click',function(){
+            document.querySelector('.aside .active').classList.remove('active')
+
+            this.classList.add('active')
+
+        })
+    }
+</script>

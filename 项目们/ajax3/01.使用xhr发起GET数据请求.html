@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- var和let都用于声明变量，不同的是：
+
+1.let声明的变量不能重复声明
+
+2.let声明的变量不能变量提升：
+
+当使用var声明一个var变量时，该变量会被提升到作用域的顶端，但是赋值的部分不会提升。 -->
+
+<!-- onreadystate存储函数（或函数名），每当readyState属性改变时，就会调用该函数。 
+xhr.states是ajax 执行时的步骤
+0: 请求未初始化
+
+1: 服务器连接已建立
+
+2: 请求已接收
+
+3: 请求处理中
+
+4: 请求已完成，且响应已就绪
+
+status：是指无论AJAX访问是否成功，由HTTP协议根据所提交的信息，服务器所返回的HTTP头信息代码，使用“ajax.status”获得。
+
+二者都是XMLHttpRequest对象的属性
+
+-->
+  <script>
+
+
+    var xhr=new XMLHttpRequest()
+
+    xhr.open('GET','http://wwww.liulongbin.top:3006/api/getbooks')
+
+    xhr.send()
+
+    xhr.onreadystatechange=function(){
+      if(xhr.readyState===4&&xhr.status===200){
+        console.log(xhr.responseText)
+      }
+    }
+  </script>
+</body>
+
+</html>

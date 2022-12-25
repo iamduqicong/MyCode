@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  .first{
+    
+    display: flex;
+    position: fixed;
+    top: 2.25rem;
+    left: 6.25rem;
+    width: 800px;
+    height: 700px;
+    background-color: #77FFEE;
+    border-radius: 30px;
+  }
+
+  
+  .first h3{
+    position: relative;
+    left: 40%;
+    top: 20px;
+    text-align: center;
+  }
+
+  .first .item{
+    position: absolute;
+    left: 4%;
+    top: 50px;
+    margin: auto;
+    width: 750px;
+    height: 550px;
+    border-style: dashed;
+    border-radius: .625rem;
+  }
+
+
+  .pic{
+    background-color: #000;
+  }
+
+  /* 尝试做个划上去能弹字出来的功能 */
